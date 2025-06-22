@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar novo produto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Changa+One:ital@0;1&family=Changa:wght@200..800&family=Iansui&display=swap" rel="stylesheet">
+    <link rel="icon" href="imagens/Logo (favicon).svg">
+    <link rel="stylesheet" href="Cadastro_produc.css">
+    <!-- Configuração do form -->
+    <style>
+        .d6 {
+            grid-area: d6;
+        }
+        .d7 {
+            grid-area: d7;
+        }
+        .d4 {
+            grid-area: d4;
+        }
+        .d3 {
+            grid-area: d3;
+        }
+        .d2 {
+            grid-area: d2;
+        }
+        .d1 {
+            grid-area: d1;
+        }
+        .d1 img {
+            height: 24vh;
+            width: 15vw;
+            border-radius: 15px;
+            border: 2px solid lightgrey;
+        }
+        body {
+            transition: background-color 0.5s;
+        }
+    </style>
+    <style>
+            p {
+                padding: 5px;
+                margin: 0px;
+            }
+    </style>
+    
+        <!-- Configuração da grade (main) -->
+    <style>
+            .cont1 {
+                grid-area: cont1;
+                margin: 5px;
+                align-content: center;
+            }
+            .cont2 {
+                grid-area: cont2;
+                margin: 5px;
+                align-content: center;
+            }
+            .cont3 {
+                grid-area: cont3;
+                margin: 5px;
+                align-content: center;
+            }
+            .cont4 {
+                grid-area: cont4;
+                margin: 5px;
+                align-content: center;
+            }
+            .cont5 {
+                grid-area: cont5;
+                font-size: 1.1rem;
+                overflow-y: auto;
+                margin: 5px;
+                margin-top: 15px;
+                margin-bottom: 15px;;
+                background-color: #ffffff;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px black;
+            }
+    </style>
+    
+        <!-- Configuração das divs (footer) -->
+    <style>
+            .g1 {
+                margin: 5px;
+                align-content: center;
+            }
+            .g2 {
+                margin: 5px;
+                align-content: center;
+            }
+    </style>
+</head>
+<body style="display: flex; flex-direction: column; min-height: 100vh">
+    <header class="topo">
+        <div class="logo"><img src="imagens/Logo_AgroPlant.png" alt="Logotipo do AgroPlant" width="50%"></div>
+        <div class="cadastro">
+            <a href="usuario.html" class="cadastrar"><img style="margin-top: 10px;" src="imagens/Cadastro_icon.svg" alt="ícone de usuário" width="60"></a>
+            <p class="txt_cadastro">Usuário</p>
+        </div>
+    </header>
+    <nav class="nave">
+        <div class="botao"><a href="usuario.html" class="link_unset"><p>Voltar</p></a></div>
+    </nav>
+    <main style="flex: 1">
+        <form class="princ">
+            <div style="display: flex; flex-direction: column; align-items: center;" class="d1">
+                <div><img src="imagens/Alface.png" alt="alface"></div> <!-- Imagem -->
+                <div><img src="imagens/mapa.png" alt="mapa"></div> <!-- Mapa -->
+            </div>
+            <input type="text" placeholder="Nome:" class="d2"> <!-- Nome -->
+            <input type="text" placeholder="Tipo do produto" class="d3"> <!-- Tipo -->
+            <input type="number" placeholder="Quantidade" class="d4"> <!-- Quantidade -->
+            <input type="text" placeholder="Inserir localização"class="d7"> <!-- Localização -->
+            <input type="text" placeholder="Descrição"class="d6"> <!-- Descrição -->
+        </form>
+    </main>
+    <footer class="roda">
+        <div class="rod1">
+            <p>Contato:</p>
+            <p>Email:</p>
+        </div>
+        <div class="rod2">
+            <div class="g1"><img src="imagens/Icine insta.svg" alt="ícone instagram" width="50px"></div>
+            <div class="g2"><img src="imagens/Icone face.svg" alt="ícone Facebook" width="50px"></div>
+        </div>
+    </footer>
+
+      <script>
+    let inputSequence = '';
+    const targetSequence = 'alanzoka';
+    const maxLength = targetSequence.length;
+
+    document.addEventListener('keydown', (event) => {
+      inputSequence += event.key.toLowerCase();
+
+      // Mantém o tamanho máximo igual ao da sequência alvo
+      if (inputSequence.length > maxLength) {
+        inputSequence = inputSequence.slice(-maxLength);
+      }
+
+      if (inputSequence === targetSequence) {
+        window.location.href = 'https://www.youtube.com/@alanzoka';
+      }
+    });
+  </script>
+</body>
+</html>

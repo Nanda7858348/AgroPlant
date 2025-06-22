@@ -1,0 +1,124 @@
+body {
+    margin: 0px;
+}
+
+/* Cabeçalho */
+.topo {
+    background-color: #3D684D;
+    display: flex;
+    justify-content: space-between;
+    min-height: 90px;
+    margin: 0px;
+    padding: 0px;
+}
+.logo {
+    align-content: center;
+    margin-top: 10px;
+}
+.cadastro {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-right: 20px;
+}
+.txt_cadastro{
+    font-family: "Caveat Brush", cursive;
+    color: white;
+    font-size: 1rem;
+}
+
+/* Navegação */
+.nave {
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+.botao {
+    background-color: #A9C9AC;
+    color: white;
+    min-width: 180px;
+    max-height: 30px;
+    text-align: center;
+    font-family: verdana;
+}
+.botao_select {
+    background-color: #87B38F;
+    color: white;
+    min-width: 180px;
+    max-height: 30px;
+    text-align: center;
+    font-family: verdana;
+}
+@media (max-width: 720px) {
+    .nave {
+        display: grid;
+        grid-template-areas:
+        'ini sob'
+        'blog prod'
+        ;
+    }
+    .botao, .botao_select {
+        margin: 5px
+    }
+}
+.botao:hover {
+    background-color: #6E9878;
+}
+.botao:active{
+    background-color: #577B63;
+    transition: 110ms;
+}
+
+.link_unset {
+    color: white;
+    text-decoration: none;
+}
+
+/* Conteúdo */
+.conteudo {
+    display: grid;
+    grid-template-areas: 
+    'cont1 cont1 cont1'
+    'cont2 cont3 cont4'
+    'cont5 cont5 cont5'
+    ;
+    min-height: 400px;
+    grid-template-rows: 40vh 15vh 18vh;
+}
+.g {
+    background-color: blue;
+    margin: 5px;
+}
+.img_align {
+    margin-left: 30%;
+}
+
+main img {
+    border-radius: 15px;
+
+}
+
+/* Rodapé */
+.roda {
+    background-color: #3D684D;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    min-height: 90px;
+    min-width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.rod1 {
+    align-content: center;
+    margin: 10px;
+}
+.rod2 {
+    margin: 10px;
+    align-content: center;
+    display: flex;
+}
+.conteudo{
+    padding: 10px;
+}

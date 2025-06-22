@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Changa+One:ital@0;1&family=Changa:wght@200..800&family=Iansui&display=swap" rel="stylesheet">
+    <link rel="icon" href="imagens/Logo (favicon).svg">
+    <link rel="stylesheet" href="Product.css">
+        <!-- Configuração dos parágrafos -->
+        <style>
+            p {
+                padding: 5px;
+                margin: 0px;
+            }
+        </style>
+    
+        <!-- Configuração da grade (main) -->
+        <style>
+            .cont1 {
+                grid-area: cont1;
+                margin: 5px;
+                align-content: center;
+            }
+            .cont2 {
+                grid-area: cont2;
+                margin: 5px;
+                align-content: center;
+            }
+            .cont3 {
+                grid-area: cont3;
+                margin: 5px;
+                align-content: center;
+            }
+            .cont4 {
+                grid-area: cont4;
+                margin: 5px;
+                align-content: center;
+            }
+            .cont5 {
+                grid-area: cont5;
+                font-size: 1.1rem;
+                overflow-y: auto;
+                margin: 5px;
+                margin-top: 15px;
+                margin-bottom: 15px;;
+                background-color: #ffffff;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px black;
+            }
+        </style>
+    
+        <!-- Configuração das divs (footer) -->
+        <style>
+            .g1 {
+                margin: 5px;
+                align-content: center;
+            }
+            .g2 {
+                margin: 5px;
+                align-content: center;
+            }
+        </style>
+</head>
+<body style="display: flex; flex-direction: column; min-height: 100vh">
+    <header class="topo">
+        <div class="logo"><img src="imagens/Logo_AgroPlant.png" alt="Logotipo do AgroPlant" width="50%"></div>
+        <div class="cadastro">
+            <a href="usuario.html" class="cadastrar"><img style="margin-top: 10px;" src="imagens/Cadastro_icon.svg" alt="ícone de Usuário" width="60"></a>
+            <p class="txt_cadastro">Usuário</p>
+        </div>
+    </header>
+    <nav class="nave">
+        <div class="botao" style="grid-area: ini"><a href="HomePage.html" class="link_unset"><p>Início</p></a></div>
+        <div class="botao" style="grid-area: sob"><a href="Telasobre.html" class="link_unset"><p>Sobre</p></a></div>
+        <div class="botao" style="grid-area: blog"><a href="blogAgroPlant.html" class="link_unset"><p>Blog</p></a></div>
+        <div class="botao_select" style="grid-area: prod"><p>Produtos</p></div>
+    </nav>
+    <main class="cont">
+        <div class="list">
+            <!-- Produto 1 -->
+            <div class="product">
+                <div class="produt_bloc"><img src="imagens/Cenouras.png" alt="cenouras" class="product_img">
+                    <div class="text_bloc">
+                        <p>Nome: Cenouras</p>
+                        <p>Produtor: André</p>
+                        <p>Endereço: S.L.Turvo</p>
+                        <p>Quantidade: 560g</p>
+                        <button type="submit" class="res"><p>Reservar</p></button>
+                    </div>
+                </div>
+                <div style="margin: 50px; font-size: 1.5rem">
+                    <p>Doação</p>
+                </div>
+            </div>
+            <hr>
+            <!-- Produto 2 -->
+            <div class="product">
+                <div class="produt_bloc"><img src="imagens/Alface.png" alt="alface" class="product_img">
+                   <div class="text_bloc">
+                        <p>Nome: Alface</p>
+                        <p>Produtor: Rafaela</p>
+                        <p>Endereço: Matão</p>
+                        <p>Quantidade: 2 uni</p>
+                        <button type="submit" class="res"><p>Reservar</p></button>
+                    </div>
+                </div>
+                <div style="margin: 50px; font-size: 1.5rem">
+                    <p>Venda</p>
+                </div>
+            </div>
+            <hr>
+            <!-- Produto 3 -->
+            <div class="product">
+                <div class="produt_bloc"><img src="imagens/Quiabo.png" alt="quiabo" class="product_img">
+                   <div class="text_bloc">
+                        <p>Nome: Quiabo</p>
+                        <p>Produtor: Fernanda</p>
+                        <p>Endereço: Matão</p>
+                        <p>Quantidade: 250g</p>
+                        <button type="submit" class="res"><p>Reservar</p></button>
+                    </div>
+                </div>
+                <div style="margin: 50px; font-size: 1.5rem">
+                    <p>Venda</p>
+                </div>
+            </div>
+            <hr>
+            <!-- Produto 4 -->
+            <div class="product">
+                <div class="produt_bloc"><img src="imagens/Alho.png" alt="alho" class="product_img">
+                    <div class="text_bloc">
+                        <p>Nome: Alho</p>
+                        <p>Produtor: Natália</p>
+                        <p>Endereço: Matão</p>
+                        <p>Quantidade: 120g</p>
+                        <button type="submit" class="res"><p>Reservar</p></button>
+                    </div>
+                </div>
+                <div style="margin: 50px; font-size: 1.5rem">
+                    <p>Doação</p>
+                </div>
+            </div>
+            <hr>
+            <!-- Produto 5 -->
+            <div class="product">
+                <div class="produt_bloc"><img src="imagens/tomate.jpg" alt="tomates" class="product_img">
+                   <div class="text_bloc">
+                        <p>Nome: Tomate</p>
+                        <p>Produtor: André</p>
+                        <p>Endereço: S.L.Turvo</p>
+                        <p>Quantidade: 160g</p>
+                        <button type="submit" class="res"><p>Reservar</p></button>
+                    </div>
+                </div>
+                <div style="margin: 50px; font-size: 1.5rem">
+                    <p>Venda</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="roda">
+        <div class="rod1">
+            <p>Contato:</p>
+            <p>Email:</p>
+        </div>
+        <div class="rod2">
+            <div class="g1"><img src="imagens/Icine insta.svg" alt="ícone instagram" width="50px"></div>
+            <div class="g2"><img src="imagens/Icone face.svg" alt="ícone Facebook" width="50px"></div>
+        </div>
+    </footer>
+</body>
+</html>

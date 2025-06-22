@@ -1,0 +1,112 @@
+body {
+    margin: 0px;
+}
+
+/* Cabeçalho */
+.topo {
+    background-color: #3D684D;
+    display: flex;
+    justify-content: space-between;
+    min-height: 90px;
+    margin: 0px;
+    padding: 0px;
+}
+.logo {
+    align-content: center;
+}
+
+/* Menu */
+
+.nave {
+    background-color: white;
+    display: flex;
+    margin: 10px;
+}
+.botao {
+    background-color: #87B38F;
+    color: white;
+    min-width: 130px;
+    max-height: 30px;
+    text-align: center;
+    font-family: verdana;
+    cursor: pointer;
+}
+.botao:hover {
+    background-color: #6E9878;
+}
+.botao:active{
+    background-color: #577B63;
+    transition: 110ms;
+}
+
+/* Conteúdo */
+main {
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+.conteudo {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 33%;
+    height: 80vh;
+}
+
+
+.box {
+    background-color: #d9dcd9;
+    min-width: 120px;
+    height: 8vh;
+    border-radius: 5px;
+    margin: 2%;
+    border: 1px solid #ccc;
+}
+
+
+.cads {
+    min-width: 120px;
+    min-height: 70px;
+    border-radius: 15px;
+    text-align: center;
+}
+#cad {
+    color: #3D684D;
+    font-family: "Caveat Brush", cursive;
+    font-size: 8vh;
+    padding: 0px;
+}
+.bot {
+    background-color: #D9D9D9;
+    min-width: 75px;
+    height: 8vh;
+    border-radius: 5px;
+    margin: 2%;
+    margin-left: 60%;
+    border: 1px solid #ccc;
+}
+
+/* Rodapé */
+.roda {
+    background-color: #3D684D;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    height: 90px;
+    min-width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.rod1 {
+    align-content: center;
+    margin: 10px;
+}
+.rod2 {
+    margin: 10px;
+    align-content: center;
+    display: flex;
+}
+.link_unset {
+    color: white;
+    text-decoration: none;
+}

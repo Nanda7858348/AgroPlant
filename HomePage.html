@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="icon" href="imagens/Logo (favicon).svg">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Changa+One:ital@0;1&family=Changa:wght@200..800&family=Iansui&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="HomeStyle.css">
+    <!-- Configuração dos parágrafos -->
+    <style>
+        p {
+            padding: 5px;
+            margin: 0px;
+        }
+    </style>
+
+    <!-- Configuração da grade (main) -->
+    <style>
+        .cont1 {
+            grid-area: cont1;
+            margin: 5px;
+            align-content: center;
+        }
+        .cont2 {
+            grid-area: cont2;
+            margin: 5px;
+            align-content: center;
+        }
+        .cont3 {
+            grid-area: cont3;
+            margin: 5px;
+            align-content: center;
+        }
+        .cont4 {
+            grid-area: cont4;
+            margin: 5px;
+            align-content: center;
+        }
+        .cont5 {
+            grid-area: cont5;
+            font-size: 1.1rem;
+            overflow-y: auto;
+            margin: 5px;
+            margin-top: 15px;
+            margin-bottom: 15px;;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px black;
+        }
+    </style>
+
+    <!-- Configuração das divs (footer) -->
+    <style>
+        .g1 {
+            margin: 5px;
+            align-content: center;
+            width: 50%;
+        }
+        .g2 {
+            margin: 5px;
+            align-content: center;
+            width: 50%;
+        }
+    </style>
+</head>
+<body style="display: flex; flex-direction: column; min-height: 100vh;">
+    <header class="topo">
+        <div class="logo"><img src="imagens/Logo_AgroPlant.png" alt="Logotipo do AgroPlant" width="50%"></div>
+        <div class="cadastro">
+            <a href="LoginPage.html" class="cadastrar"><img style="margin-top: 10px;" src="imagens/Cadastro_icon.svg" alt="ìcone de cadastro" width="60"></a>
+            <p class="txt_cadastro">Cadastrar</p>
+        </div>
+    </header>
+    <nav class="nave">
+        <div class="botao_select" style="grid-area: ini"><p>Inicio</p></div>
+        <div class="botao" style="grid-area: sob"><a href="Telasobre.html" class="link_unset"><p>Sobre</p></a></div>
+        <div class="botao" style="grid-area: blog"><a href="blogAgroPlant.html" class="link_unset"><p>Blog</p></a></div>
+        <div class="botao" style="grid-area: prod"><a href="Prduct.html" class="link_unset"><p>Produtos</p></a></div>
+    </nav>
+
+    <main class="conteudo" style="flex: 1">
+        <div class="cont1"><img src="imagens/CampoGrande.png" alt="Imagem de um campo aberto" width="100%"></div>
+        <div class="cont2"><img src="imagens/Colheita1.png" alt="Imagem de colheita de alface" width="200px" class="img_align"></div>
+        <div class="cont3"><img src="imagens/Colheita2.png" alt="Imagem de colheita de rabanete" width="200px" class="img_align"></div>
+        <div class="cont4"><img src="imagens/Colheita3.png" alt="Imagem de colheita" width="200px" class="img_align"></div>
+        <div class="cont5"><p>Cultivar, conectar, compartilhar. Na AgroPlant, cada colheita tem um destino certo, pegue seu produto fresquinho ou transforma-se em solidariedade. Acreditamos em um ciclo mais justo: do campo à mesa, com menos desperdício e mais propósito.</p></div>
+    </main>
+    <footer class="roda">
+        <div class="rod1">
+            <p>Contato:</p>
+            <p>Email:</p>
+        </div>
+        <div class="rod2">
+            <div class="g1"><img src="imagens/Icine insta.svg" alt="ícone instagram" width="50px"></div>
+            <div class="g2"><img src="imagens/Icone face.svg" alt="ícone Facebook" width="50px"></div>
+        </div>
+    </footer>
+</body>
+</html>

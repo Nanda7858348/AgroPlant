@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Changa+One:ital@0;1&family=Changa:wght@200..800&family=Iansui&display=swap" rel="stylesheet">
+    <link rel="icon" href="imagens/Logo (favicon).svg">
+    <link rel="stylesheet" href="LoginPage.css">
+    <!-- Configuração dos parágrafos -->
+     <style>
+        p {
+            padding: 5px;
+            margin: 0px;            }
+    </style>
+
+    <!-- Configuração das divs (footer) -->
+    <style>
+            .g1 {
+                margin: 5px;
+                align-content: center;
+                width: 50%;
+            }
+            .g2 {
+                margin: 5px;
+                align-content: center;
+                width: 50%;
+            }
+    </style>
+</head>
+<body style="display: flex; flex-direction: column; min-height: 100vh;">
+    <header class="topo">
+        <div class="logo"><img src="imagens/Logo_AgroPlant.png" alt="Logotipo do AgroPlant" width="50%"></div>
+    </header>
+    <nav class="nave">
+        <div class="botao"><a href="HomePage.html" class="link_unset"><p>Voltar</p></a></div>
+    </nav>
+    <main style="flex: 1">
+        <form class="conteudo">
+            <div class="cads"><p id="cad">Cadastro</p></div>
+            <input class="box" type="text" name="usuário" placeholder="Nome:" required>
+            <input class="box" type="text" name="addres" placeholder="Endereço:" required>
+            <input class="box" type="email" name="conta" placeholder="Email:" required>
+            <input class="box" type="tel" name="tell" placeholder="Contato:">
+            <input class="box" type="password" name="pass" placeholder="Senha:" required>
+            <button class="bot" type="submit"><p style="opacity: 50%;">Concluir</p></button>
+        </form>
+    </main>
+    <footer class="roda">
+        <div class="rod1">
+            <p>Contato:</p>
+            <p>Email:</p>
+        </div>
+        <div class="rod2">
+            <div class="g1"><img src="imagens/Icine insta.svg" alt="ícone instagram" width="50px"></div>
+            <div class="g2"><img src="imagens/Icone face.svg" alt="ícone Facebook" width="50px"></div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela Sobre</title>
+    <link rel="icon" href="imagens/Logo (favicon).svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Changa+One:ital@0;1&family=Changa:wght@200..800&family=Iansui&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Telasobre.css">
+</head>
+<body style="display: flex; flex-direction: column; min-height: 100vh">
+    <header class="topo">
+        <div class="logo"><img src="imagens/Logo_AgroPlant.png" alt="Logotipo do AgroPlant" width="50%"></div>
+        <div class="cadastro">
+            <a href="LoginPage.html" class="cadastrar"><img style="margin-top: 10px;" src="imagens/Cadastro_icon.svg" alt="ìcone de cadastro" width="60"></a>
+            <p class="txt_cadastro">Cadastrar</p>
+        </div>
+    </header>
+
+    <nav class="nave">
+        <div class="botao" style="grid-area: ini"><a href="HomePage.html" class="link_unset"><p>Início</p></a></div>
+        <div class="botao_select" style="grid-area: sob"><p>Sobre</p></div>
+        <div class="botao" style="grid-area: blog"><a href="blogAgroPlant.html" class="link_unset"><p>Blog</p></a></div>
+        <div class="botao" style="grid-area: prod"><a href="Prduct.html" class="link_unset"><p>Produtos</p></a></div>
+    </nav>
+
+    <main class="pricipal" style="flex: 1">
+        <div style="display: flex; flex-direction: column; justify-content: space-around; margin: 10px;">
+            <div style="max-width: 50%;">
+                <div class="green_box"><h1>Quem somos?</h1></div>
+                <p>A AgroPlant é uma plataforma que aproxima pequenos agricultores de consumidores conscientes,
+                     valorizando a produção local e sustentável. Aqui, você compra direto de quem cultiva com carinho sem intermediários,
+                      com mais qualidade e preço justo.</p>
+            </div>
+
+            <div style="max-width: 50%;">
+                <div class="green_box"><h1>Objetivos</h1></div>
+                <p>Facilitar a venda justa da produção de pequenos agricultores e garantir que nenhum alimento se perca,
+                     destinando os excedentes a quem mais precisa.</p>
+            </div>
+        </div>
+
+        <div style="margin: 3%;"><img class="foto" src="imagens/trator.jpg" alt="" width="600" height="100%"></div>
+    </main>
+</main>
+
+<footer class="roda">
+    <div class="rod1">
+        <p>Contato:</p>
+        <p>Email:</p>
+    </div>
+    <div class="rod2">
+            <div class="g1"><img src="imagens/Icine insta.svg" alt="ícone instagram" width="50px"></div>
+            <div class="g2"><img src="imagens/Icone face.svg" alt="ícone Facebook" width="50px"></div>
+    </div>
+</body>
+</html>

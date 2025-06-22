@@ -1,0 +1,157 @@
+body {
+    margin: 0px;
+}
+
+
+.topo {
+    background-color: #3D684D;
+    display: flex;
+    justify-content: space-between;
+    min-height: 90px;
+    margin: 0px;
+    padding: 0px;
+}
+.logo {
+    align-content: center;
+    margin-top: 10px;
+}
+.cadastro {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-right: 20px;
+}
+.txt_cadastro{
+    font-family: "Caveat Brush", cursive;
+    color: white;
+    font-size: 1rem;
+}
+
+
+.nave {
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+.botao {
+    background-color: #A9C9AC;
+    color: white;
+    min-width: 180px;
+    max-height: 30px;
+    text-align: center;
+    font-family: verdana;
+}
+.botao_select {
+    background-color: #87B38F;
+    color: white;
+    min-width: 180px;
+    max-height: 30px;
+    text-align: center;
+    font-family: verdana;
+}
+@media (max-width: 720px) {
+    .nave {
+        display: grid;
+        grid-template-areas:
+        'ini sob'
+        'blog prod'
+        ;
+    }
+    .botao, .botao_select {
+        margin: 5px
+    }
+}
+.botao:hover {
+    background-color: #6E9878;
+}
+.botao:active{
+    background-color: #577B63;
+    transition: 110ms;
+}
+.link_unset {
+    color: white;
+    text-decoration: none;
+}
+p{
+    margin: 0px;
+    padding: 5px;
+}
+
+
+.cont{
+    height: 60%;
+    padding: 10px;
+}
+
+
+.roda {
+    background-color: #3D684D;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    min-height: 90px;
+    min-width: 100%;
+    margin: 0px;
+    padding: 0px;
+    
+}
+.rod1 {
+    align-content: center;
+    margin: 10px;
+}
+.rod2 {
+    margin: 10px;
+    align-content: center;
+    display: flex;
+}
+
+.g1 {
+    margin: 5px;
+    align-content: center;
+    width: 50%;
+}
+.g2 {
+    margin: 5px;
+    align-content: center;
+    width: 50%;
+}
+h1, h2, h3{
+    color: #3D684D;
+    font-family: "Changa", sans-serif;
+    
+    
+}
+h1{
+    padding: 10px;
+}
+.afastar{
+    padding: 10px;
+}
+.main_img {
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+}
+
+
+.container {
+  display: flex;
+  justify-content: space-between; /* Espaçamento entre os itens */
+}
+.box{
+    margin: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 90%;
+        max-width: 400px;
+    }
+}
